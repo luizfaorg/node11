@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "node11"
+  annotations:
+    humanitec.com/orgId: "htc-demo-41"
+    humanitec.com/appId: "node11"
+    quay.io/repository-slug: "quayadmin/node11"
+    backstage.io/kubernetes-id: node11
+    backstage.io/source-location: url:https://github.com/luizfaorg/node11
+    github.com/project-slug: luizfaorg/node11
+  tags:
+    - node
+    - humanitec
+spec:
+  type: service
+  owner: "user1"
+  lifecycle: experimental
+  providesApis:
+    - "node11"
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: "node11"
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: "user1"
+  definition:
+    $text: ./openapi.yaml
