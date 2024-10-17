@@ -13,7 +13,7 @@ env:
   # Not on a cloud or unknown cloud provider 
 
   BASE_ENVIRONMENT: 'luiz-ocp-k8s'
-  ENVIRONMENT_TYPE: 'development'
+  ENVIRONMENT_TYPE: 'pullreq'
   HUMCTL_VERSION: '*'
   ENVIRONMENT_ID: pr-${{ github.event.number }}
   ENVIRONMENT_NAME: PR-${{ github.event.number }}
