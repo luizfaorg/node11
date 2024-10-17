@@ -13,3 +13,8 @@ spec:
   service:
     labels:
       backstage.io/kubernetes-id: node11
+
+  resources:
+    route:
+      labels:
+        backstage.io/kubernetes-id: node11
